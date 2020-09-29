@@ -8,6 +8,8 @@ import { FooterComponent } from './footer/footer.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { AboutComponent } from './about/about.component';
 import { HomeComponent } from './home/home.component';
+import { TypingAnimationDirective } from 'angular-typing-animation';
+
 
 @NgModule({
   declarations: [
@@ -16,11 +18,12 @@ import { HomeComponent } from './home/home.component';
     FooterComponent,
     ProjectsComponent,
     AboutComponent,
-    HomeComponent
+    HomeComponent,
+    TypingAnimationDirective,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

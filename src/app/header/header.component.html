@@ -1,14 +1,6 @@
-<div>
-  <nav class="main-nav">
-    <div class="title">
-      <a routerLink="/home" routerLinkActive="active">
-        <h1 id="typedtext"></h1>
-      </a>
-      <div @fadeIn class="subtitle"><h3>front end developer</h3></div>
-    </div>
-    <ul>
-      <li><a routerLink="/about" routerLinkActive="active">About</a></li>
-      <li><a href="#">Projects</a></li>
-    </ul>
-  </nav>
-</div>
+<nav>
+  <ul>
+    <li (click)="toAbout()" routerLinkActive="active">About</li>
+    <li (click)="toProjects()" routerLinkActive="active">Projects</li>
+  </ul>
+</nav>

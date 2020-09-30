@@ -11,30 +11,27 @@ import {trigger, style, state, animate, transition} from '@angular/animations';
       state('void', style({
         opacity: 0
       })),
-      transition('void => *', animate('2.5s')),
+      transition('void => *', animate('1.0s 2.0s')),
     ]),
 ]})
 
-export class HeaderComponent implements OnInit, AfterViewInit {
+export class HeaderComponent implements OnInit {
 
   constructor() { }
 
-  delay: Number = 1
 
   ngOnInit(): void {
     
   }
 
-
-
-  ngAfterViewInit() {
-    const target = document.getElementById("typedtext") as HTMLElement;
-
-    const writer = new Typewriter(target, {
-      loop: false,
-      typeColor: 'black'
-    })
-
-    writer.type('alice griffin.').rest(5000).start();
+  toAbout() {
+  document.getElementById("about").scrollIntoView({behavior: "smooth"});
   }
-};
+
+  toProjects() {
+    document.getElementById("projects").scrollIntoView({behavior: "smooth"});
+  }
+}
+
+
+  

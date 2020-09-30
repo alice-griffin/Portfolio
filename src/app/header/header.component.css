@@ -1,50 +1,20 @@
-div {
-  display: flex;
-}
-
-.title {
-  width: auto;
-  display: flex;
-  flex-direction: column;
-  line-height: 0px;
-  align-items: center;
-}
-
-h1 {
-  font-family: 'Helvetica';
-}
-
-.subtitle {
-  font-family: 'Helvetica';
-  font-weight: bold;
-  font-size: 20px;
-}
-
-.load {
-  opacity: 1;
-}
-
-.main-nav {
+nav {
   width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
-.main-nav ul {
+nav ul {
   list-style-type: none;
+  display: flex; 
+  margin: 0;
+  padding: 0;
 }
 
-.main-nav ul li {
-  font-size: 24px;
-}
-
-.main-nav ul li a {
-  text-decoration: none;
-  margin-right: 100px;
-  font-family: "Helvetica", sans-serif;
-  color: black;
-}
-
-.main-nav a {
+nav ul li {
   text-decoration: none;
   font-size: 2rem;
   color: black;
+  font-family: "Helvetica", sans-serif;
+  padding: 20px;
 }

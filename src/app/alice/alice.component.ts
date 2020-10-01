@@ -11,7 +11,7 @@ import {trigger, style, state, animate, transition} from '@angular/animations';
       state('void', style({
         opacity: 0
       })),
-      transition('void => *', animate('1.0s 2.5s')),
+      transition('void => *', animate('1.0s 2.3s')),
     ]),
 ]})
 
@@ -30,10 +30,12 @@ export class AliceComponent implements OnInit, AfterViewInit {
 
     const writer = new Typewriter(target, {
       loop: false,
-      typeColor: 'black'
+      typeColor: "#ac3b61",
+      cursorColor: "#ac3b61"
+      
     })
 
-    writer.type(`hi, i'm alice griffin.`).rest(5000).start();
+    writer.type(`hi, i'm alice griffin.`).rest(4000).start();
   }
 }
 

@@ -1,6 +1,10 @@
 .container {
   display: flex;
-  height: calc(100vh - 100px); 
+  height: 100vh; 
+}
+
+.title-type {
+  display: flex;
 }
 
 .title {

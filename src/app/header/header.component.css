@@ -2,6 +2,7 @@ nav {
   width: 100%;
   display: flex;
   justify-content: center;
+  position: fixed;
 }
 
 nav ul {
@@ -13,8 +14,14 @@ nav ul {
 
 nav ul li {
   text-decoration: none;
-  font-size: 2rem;
-  color: black;
+  font-size: 1.5rem;
   font-family: "Helvetica", sans-serif;
   padding: 20px;
+  cursor: pointer;
+}
+
+.scrolled {
+  background-color: #ac3b61;
+  transition: 0.5s;
+  color: #EAE7DC; 
 }

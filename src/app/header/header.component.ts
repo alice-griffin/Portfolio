@@ -1,5 +1,4 @@
-import { AfterViewInit, Component, OnInit } from '@angular/core';
-import Typewriter from 't-writer.js';
+import { Component, HostListener, OnInit } from '@angular/core';
 import {trigger, style, state, animate, transition} from '@angular/animations';
 
 @Component({
@@ -15,10 +14,23 @@ import {trigger, style, state, animate, transition} from '@angular/animations';
     ]),
 ]})
 
+
 export class HeaderComponent implements OnInit {
 
+  
+  
   constructor() { }
 
+
+  @HostListener('window:scroll', []) 
+    onScroll() {
+    let nav = document.querySelector("nav")
+    nav.classList.add("scrolled");
+    if (window.scrollY === 0) {
+      nav.classList.remove("scrolled");
+      nav.style.transition = "all ease-out 0.5s"
+    }
+  }
 
   ngOnInit(): void {
     
@@ -33,5 +45,3 @@ export class HeaderComponent implements OnInit {
   }
 }
 
-
-  

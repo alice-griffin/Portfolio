@@ -2,13 +2,13 @@
     height: auto;
     min-height: 100vh; 
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
 }
 
 img {
-    height: auto;
+    height: 170px;
     width: 300px;
-    border: 2px solid lightgrey;  
+    border: 1px solid lightgrey;  
 }
 
 a {
@@ -21,10 +21,9 @@ img:hover {
 
 .projects-main {
     display: flex;
-    flex-direction: column;
-    width: 100%;
-    align-items: center;
+    flex-wrap: wrap;
     justify-content: center;
+    align-items: flex-start;
 }
 
 .project-container {
@@ -33,7 +32,8 @@ img:hover {
     flex-direction: column;
     justify-content: center;
     overflow: hidden;
-    padding: 20px 0px 20px;
+    padding: 20px;
+    
 }
 
 button {

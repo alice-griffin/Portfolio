@@ -1,10 +1,53 @@
 .container {
-    height: calc(100vh - 150px);
-    margin-top: 100px; 
+    height: calc(100vh - 140px);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+p {
+    font-family: sans-serif;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-indent: 40px;
 }
 
 h3 {
     margin-left: 20px; 
-    font-family: "Helvetica", sans-serif;
+    font-family: Helvetica, sans-serif;
     color:  #ac3b61;
+    font-size: 1.5rem;
+}
+
+h4 {
+    margin-left: 20px; 
+    font-family: Helvetica, sans-serif;
+    color:  #ac3b61;
+    font-size: 1.5rem;
+}
+
+ul {
+    list-style: none;
+    text-align: center;
+    width: 80%;
+    margin: 0;
+    padding: 0;
+    align-self: center;
+}
+
+ul li {
+    background: #ac3b61;
+    color: #EAE7DC;
+    border-radius: 5px;
+    font-size: 14px;
+    display: inline-block;
+    margin: 5px;
+    padding: 10px; 
+    font-family: sans-serif;
+}
+
+.skills {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }

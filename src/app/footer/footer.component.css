@@ -1,0 +1,36 @@
+.container {
+    display: flex;
+    justify-content: center;
+    background-color: #ac3b61;
+}
+
+.fa {
+    background: #EAE7DC;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer; 
+}
+
+.fa:hover {
+    box-shadow: 0px 0px 5px #EAE7DC;
+}
+
+.wp-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    vertical-align: middle;
+    color: #ac3b61;
+  }
+
+  ul {
+      padding: 0;
+      margin: 0;
+  }
+
+  ul li {
+      list-style: none;
+      float: left; 
+      margin: 10px 20px; 
+  }

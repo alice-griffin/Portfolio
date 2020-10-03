@@ -1,14 +1,12 @@
 .container {
-    height: auto;
-    min-height: 100vh; 
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
 }
 
 img {
     height: 170px;
     width: 300px;
-    border: 1px solid lightgrey;  
+    border: 1px solid #ac3b61;
 }
 
 a {
@@ -23,7 +21,6 @@ img:hover {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: flex-start;
 }
 
 .project-container {
@@ -32,16 +29,15 @@ img:hover {
     flex-direction: column;
     justify-content: center;
     overflow: hidden;
-    padding: 20px;
-    
+    padding: 15px;   
 }
 
 button {
+    display: hidden;
     position: absolute;
     border-radius: 5px;
     background-color: rgb(43, 43, 43);
     color: white; 
-    display: block;
     width: 100px; 
     border: none;
     padding: 5px 10px; 
@@ -53,7 +49,6 @@ button {
 
 h3 {
     margin-left: 20px; 
-    margin-top: 100px; 
     font-family: Helvetica, sans-serif;
     color:  #ac3b61;
     font-size: 1.5rem;
@@ -61,11 +56,21 @@ h3 {
 
 #description {
     font-family: sans-serif;
-    margin-top: 5px;
-    font-size: 11px;
-    align-self: center;
-    color: white; 
-    background-color: #ac3b61;
+    font-size: 12px;
+    font-weight: bold;
+    color: #ac3b61;
     padding: 5px;
-    border-radius: 5px;
+    width: fit-content;
+}
+
+.desc-icon {
+    display: flex;
+    margin-top: 5px;
+    align-content: center;
+    justify-content: space-between;
+}
+
+.fas {
+    color: #ac3b61;
+    font-size: 20px;
 }

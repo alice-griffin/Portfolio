@@ -1,30 +1,47 @@
 <div class="container">
-    <h3>projects:</h3>
-    <div class="projects-main">
-        <div (mouseover)="this.hovering1 = true" (mouseleave)="this.hovering1 = false" class="project-container">
-            <a class="github" target="_blank" href="http://movie-night-v1.surge.sh/"><img
-                    src="./assets/movie-night.JPG"></a>
-            <div id="description">Angular/TypeScript/HTML/CSS</div>
-            <a target="_blank" href="https://github.com/alice-griffin/movie-app"><button
-                    [ngStyle]="{'display': this.hovering1 ? 'block' : 'none'}">view code</button></a>
+        <h3>projects:</h3>
+        <div class="projects-main">
+                <div (mouseover)="this.hovering1 = true" (mouseleave)="this.hovering1 = false"
+                        class="project-container">
+                        <div class="img-wrapper">
+                                <a class="github" target="_blank" href="http://movie-night-v1.surge.sh/"><img
+                                                src="./assets/movie-night.JPG" /></a>
+                        </div>
+                        <div class="desc-icon">
+                                <div id="description">Angular/TypeScript/HTML/CSS</div>
+                                <a target="_blank" href="https://github.com/alice-griffin/movie-app"><i
+                                                class="fas fa-code"></i></a>
+                        </div>
+                </div>
+                <div (mouseover)="this.hovering2 = true" (mouseleave)="this.hovering2 = false"
+                        class="project-container">
+                        <a target="_blank" href="http://weathertunes.surge.sh/"><img
+                                        src="./assets/weathertunes.JPG" /></a>
+                        <div class="desc-icon">
+                                <div id="description">Angular/TypeScript/HTML/CSS</div>
+                                <a target="_blank" href="https://github.com/alice-griffin/weathertunes"><i
+                                                class="fas fa-code"></i></a>
+                        </div>
+                </div>
+                <div (mouseover)="this.hovering3 = true" (mouseleave)="this.hovering3 = false"
+                        class="project-container">
+                        <a target="_blank" href="http://budget-buddy.surge.sh/"><img
+                                        src="./assets/budget-bdy.JPG" /></a>
+                        <div class="desc-icon">
+                                <div id="description">JavaScript/HTML/CSS</div>
+                                <a target="_blank" href="https://github.com/alice-griffin/budget-buddy"><i
+                                                class="fas fa-code"></i></a>
+                        </div>
+
+                </div>
+                <div (mouseover)="this.hovering4 = true" (mouseleave)="this.hovering4 = false"
+                        class="project-container">
+                        <a target="_blank" href="http://ag-todo-app.surge.sh/"><img src="./assets/todo-list.JPG" /></a>
+                        <div class="desc-icon">
+                                <div id="description">Angular/TypeScript/HTML/CSS</div>
+                                <a target="_blank" href="https://github.com/alice-griffin/todo-list"><i
+                                                class="fas fa-code"></i></a>
+                        </div>
+                </div>
         </div>
-        <div (mouseover)="this.hovering2 = true" (mouseleave)="this.hovering2 = false" class="project-container"><a target="_blank" href="http://weathertunes.surge.sh/"><img
-                    src="./assets/weathertunes.JPG"></a>
-            <div id="description">Angular/TypeScript/HTML/CSS</div>
-            <a target="_blank" href="https://github.com/alice-griffin/weathertunes"><button
-                    [ngStyle]="{'display': this.hovering2 ? 'block' : 'none'}">view code</button></a>
-        </div>
-        <div (mouseover)="this.hovering3 = true" (mouseleave)="this.hovering3 = false" class="project-container"><a target="_blank" href="http://budget-buddy.surge.sh/"><img
-                    src="./assets/budget-bdy.JPG"></a>
-            <div id="description">JavaScript/HTML/CSS</div>
-            <a target="_blank" href="https://github.com/alice-griffin/budget-buddy"><button
-                    [ngStyle]="{'display': this.hovering3 ? 'block' : 'none'}">view code</button></a>
-        </div>
-        <div (mouseover)="this.hovering4 = true" (mouseleave)="this.hovering4 = false" class="project-container"><a target="_blank" href="http://ag-todo-app.surge.sh/"><img
-                    src="./assets/todo-list.JPG"></a>
-            <div id="description">Angular/TypeScript/HTML/CSS</div>
-            <a target="_blank" href="https://github.com/alice-griffin/todo-list"><button
-                    [ngStyle]="{'display': this.hovering4 ? 'block' : 'none'}">view code</button></a>
-        </div>
-    </div>
 </div>

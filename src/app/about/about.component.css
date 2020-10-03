@@ -1,7 +1,5 @@
 .container {
-    height: calc(100vh - 140px);
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
 }
 
@@ -10,13 +8,6 @@ p {
     margin-left: 20px;
     margin-right: 20px;
     text-indent: 40px;
-}
-
-h3 {
-    margin-left: 20px; 
-    font-family: Helvetica, sans-serif;
-    color:  #ac3b61;
-    font-size: 1.5rem;
 }
 
 h4 {
@@ -50,4 +41,11 @@ ul li {
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+@media only screen and (min-width: 768px) {
+    .container {
+        flex-direction: row;
+    }
+
 }

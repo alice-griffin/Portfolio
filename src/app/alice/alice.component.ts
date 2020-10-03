@@ -11,15 +11,13 @@ import {trigger, style, state, animate, transition} from '@angular/animations';
       state('void', style({
         opacity: 0
       })),
-      transition('void => *', animate('1.0s 2.3s')),
+      transition('void => *', animate('1.0s 2.5s')),
     ]),
 ]})
 
 export class AliceComponent implements OnInit, AfterViewInit {
 
   constructor() { }
-
-  delay: Number = 1
 
   ngOnInit(): void {
     

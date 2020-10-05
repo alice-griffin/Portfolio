@@ -1,36 +1,40 @@
 .container {
-    display: flex;
-    justify-content: center;
-    background-color: #ac3b61;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
 }
 
 .fa {
-    background: #EAE7DC;
-    transition: all 0.2s ease-in-out;
-    cursor: pointer; 
+  background: #FBFEFB;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
 }
 
 .fa:hover {
-    box-shadow: 0px 0px 5px #EAE7DC;
+  box-shadow: 0px 0px 5px #eae7dc;
 }
 
 .wp-icon {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    text-align: center;
-    line-height: 50px;
-    vertical-align: middle;
-    color: #ac3b61;
-  }
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 50px;
+  color: #ac3b61; 
+}
 
-  ul {
-      padding: 0;
-      margin: 0;
-  }
+.wp-icon:hover {
+   opacity: 0.5;
+}
 
-  ul li {
-      list-style: none;
-      float: left; 
-      margin: 10px 20px; 
-  }
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+ul li {
+  list-style: none;
+  float: left;
+  margin: 10px 20px;
+}

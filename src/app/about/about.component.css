@@ -1,20 +1,22 @@
 .container {
     display: flex;
     flex-direction: column;
+    margin: 0px 20px;
 }
 
 p {
-    font-family: sans-serif;
+    font-family: 'Montserrat', sans-serif;
     margin-left: 20px;
-    margin-right: 20px;
+    margin-right: 40px;
     text-indent: 40px;
+    color: black;
 }
 
-h4 {
-    margin-left: 20px; 
-    font-family: Helvetica, sans-serif;
-    color:  #ac3b61;
+h4 { 
+    font-family: 'Open Sans', sans-serif;
+    color:   #ac3b61;
     font-size: 1.5rem;
+    margin: 15px 0px;
 }
 
 ul {
@@ -27,14 +29,15 @@ ul {
 }
 
 ul li {
-    background: #ac3b61;
-    color: #EAE7DC;
-    border-radius: 5px;
+    background-color: transparent;
+    color: black;
+    border-radius: 10px;
     font-size: 14px;
+    font-weight: bold;
     display: inline-block;
     margin: 5px;
     padding: 10px; 
-    font-family: sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .skills {
@@ -43,9 +46,55 @@ ul li {
     justify-content: center;
 }
 
+a {
+    text-decoration: none;
+    margin-left: 15px;
+    line-height: 30px;
+    font-size: 16px;
+    color:#ac3b61;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    margin: 0px 20px;
+}
+
+.email, .resume {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.far {
+    color: black;
+}
+
+
 @media only screen and (min-width: 768px) {
+
     .container {
         flex-direction: row;
+        margin: 0px 50px; 
+    }
+
+    .contact {
+        margin: 0px 50px; 
+    }
+
+    h4 {
+        font-size: 36px;
+        font-weight: lighter;
+    }
+
+    p {
+        font-size: 20px;
+    }
+
+    .email, .resume {
+        font-size: 22px;
+    }
+
+    a {
+        font-size: 20px;
     }
 
 }

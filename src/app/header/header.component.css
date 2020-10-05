@@ -15,14 +15,20 @@ nav ul {
 nav ul li {
   text-decoration: none;
   font-size: 1.5rem;
-  font-family: "Helvetica", sans-serif;
-  padding: 20px;
+  font-weight: lighter;
+  font-family: 'Open Sans', sans-serif;
+  padding: 20px 40px;
   cursor: pointer;
 }
 
 .scrolled {
   background-color: #ac3b61;
   transition: 0.5s;
-  color: #EAE7DC; 
+}
+
+@media only screen and (min-width: 768px) {
+  nav ul li {
+    font-size: 1.8rem;
+  }
 }
 

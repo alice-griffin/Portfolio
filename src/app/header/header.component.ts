@@ -21,14 +21,18 @@ export class HeaderComponent implements OnInit {
   
   constructor() { }
 
+  scrolled: boolean = false;
+
 
   @HostListener('window:scroll', []) 
     onScroll() {
-    let nav = document.querySelector("nav")
+    const nav = document.querySelector("nav");
     nav.classList.add("scrolled");
+    this.scrolled = true;
     if (window.scrollY === 0) {
       nav.classList.remove("scrolled");
       nav.style.transition = "all ease-out 0.5s"
+      this.scrolled = false; 
     }
   }
 

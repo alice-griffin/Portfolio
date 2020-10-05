@@ -1,6 +1,6 @@
 <nav>
   <ul>
-    <li (click)="toAbout()" routerLinkActive="active">about</li>
-    <li (click)="toProjects()" routerLinkActive="active">projects</li>
+    <li [style.color]="scrolled ? '#FBFEFB' : 'black'" (click)="toAbout()" routerLinkActive="active">about</li>
+    <li [style.color]="scrolled ? '#FBFEFB' : 'black'" (click)="toProjects()" routerLinkActive="active">projects</li>
   </ul>
 </nav>

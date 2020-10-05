@@ -62,6 +62,7 @@ a {
 
 .email, .resume {
     font-family: 'Montserrat', sans-serif;
+    margin-left: 20px;
 }
 
 .far {
@@ -69,11 +70,15 @@ a {
 }
 
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1200px) {
 
     .container {
         flex-direction: row;
         margin: 0px 50px; 
+    }
+
+    .left {
+        width: 75%;
     }
 
     .contact {

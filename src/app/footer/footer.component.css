@@ -6,13 +6,12 @@
 }
 
 .fa {
-  background: #FBFEFB;
   transition: all 0.2s ease-in-out;
   cursor: pointer;
 }
 
 .fa:hover {
-  box-shadow: 0px 0px 5px #eae7dc;
+  box-shadow: 0px 0px 5px white;
 }
 
 .wp-icon {

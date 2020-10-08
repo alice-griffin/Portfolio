@@ -37,3 +37,15 @@ ul li {
   float: left;
   margin: 10px 20px;
 }
+
+.copyright {
+  display: flex;
+  justify-content: center;
+}
+
+a {
+  font-family: 'Montserrat', sans-serif;
+  text-decoration: none;
+  color: black;
+  margin-bottom: 5px;
+}
